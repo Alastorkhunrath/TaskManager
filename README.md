@@ -36,37 +36,7 @@ Todo Tasks - это полнофункциональное приложение 
 - **TypeScript ESLint** - правила для TypeScript
 - **Vite Plugin React** - Fast Refresh
 
-## 📦 Установка и запуск
 
-### Требования
-- Node.js 18+
-- npm или yarn
-
-### Шаги установки
-
-1. **Клонируйте репозиторий**
-```bash
-git clone https://github.com/your-username/todoTasks.git
-cd todoTasks
-```
-
-2. **Установите зависимости**
-```bash
-npm install
-```
-
-3. **Запустите PocketBase**
-```bash
-cd pocketbase
-./pocketbase serve
-```
-PocketBase будет доступен на `http://127.0.0.1:8090`
-
-4. **Запустите приложение**
-```bash
-npm run dev
-```
-Приложение откроется на `http://localhost:5173`
 
 ## 🏗️ Структура проекта
 
