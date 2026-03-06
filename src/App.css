@@ -1,0 +1,112 @@
+
+
+
+*{
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+}
+
+
+
+
+
+.calendar{
+  width: 100%;
+}
+
+
+.calendar_container{
+  width: 100%;
+
+}
+.calendar_weekly{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.calendar_header{
+  display: flex;
+  width: 100%;
+  padding: 0 50px;
+}
+
+
+.title{
+  flex-grow: 3;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.title_day{
+  width: 200px;
+}
+
+.today{
+  width: 100%;
+  background: blue;
+  height: 25px;
+  border-radius: 0 0 20px 20px;
+}
+.title_day > h3{
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.is_today{
+background: rgb(170, 170, 255);
+}
+
+
+.cursor_point{
+  cursor: pointer;
+}
+
+.btn_slide{
+  flex-basis: 200px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+
+.btn_slide > button{
+  font-size: 40px;
+  cursor: pointer;
+}
+.width_max{
+  max-width: 100%;
+}
+.height{
+  height: 460px;
+}
+
+.slider_coontainer{
+  width: 300%;
+  height: 100%;
+}
+
+.weekly{
+  width: 33.3%;
+  height: 100%;
+}
+.stoke-slide{
+  transform:translateX(-33.3%);
+}
+
+.slide-next{
+  transition: 0.5s ease-in-out;
+  transform: translateX(-66.6%);
+}
+.slide-back{
+  transition: 0.5s ease-in-out;
+  transform: translateX(0%);
+}
+
+.scroll-none{
+  overflow-x: hidden;
+}
+
+

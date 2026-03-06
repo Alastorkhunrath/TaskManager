@@ -1,0 +1,36 @@
+
+
+
+
+.container{
+    width: 100%;
+    max-width:1600px;
+    margin: 0 auto;
+
+}
+
+.inner_container{
+    width: 100%;
+    max-width: 1040px;
+}
+
+
+.task_today_container{
+    width: 100%;
+    max-width:350px;
+    
+}
+
+.tasks_today{
+    width: 100%;
+   
+}
+
+.statistics{
+    width: 100%;
+    max-width: 610px;
+}
+
+.title_statistics{
+    
+}

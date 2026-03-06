@@ -1,0 +1,105 @@
+.new_task_container{
+    width: 100%;
+    max-width: 280px ;
+    padding: 11.5px 16px ;
+    background: rgba(95, 51, 225, 1);
+    border-radius: 20px ;
+    /* margin-top: 20px; */
+}
+
+.contaainer_close_btn > h3{
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.new_task_container > h4{
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    margin: 7px 0;
+}
+
+
+.input_container > input{
+
+    width: 100%;
+    background: white;
+    border-radius: 15px;
+    padding: 6px 15px;
+
+}
+
+.priority_btns{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.priority_btn{
+    padding: 3px 13px;
+    font-weight: 600;
+    
+}
+
+.priority_low{
+    color: rgba(255, 125, 83, 1);
+    background:rgba(255, 233, 225, 1) ;
+    border-radius: 7px;
+}
+
+.priority_medium{
+    color: rgba(95, 51, 225, 1);
+    background: rgba(237, 232, 255, 1);
+    border-radius: 7px;
+}
+
+.low{
+    transform: scale(1.2);
+    box-shadow: 0 0 2px wheat;
+    transition: 0.2s;
+}
+
+.medium{
+    transform: scale(1.2);
+    box-shadow: 0 0 2px wheat;
+    transition: 0.2s;
+}
+
+.high{
+    transform: scale(1.2);
+    box-shadow: 0 0 2px wheat;
+    transition: 0.2s;
+}
+
+.priority_high{
+    color: rgba(0, 135, 255, 1);
+    background: rgba(227, 242, 255, 1);
+    border-radius: 7px;
+}
+.btn_ok{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.fa_check{
+    background: rgba(254, 254, 254, 1);
+    padding: 5px 25px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.contaainer_close_btn{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 10px;
+}
+.btn_close{
+    cursor: pointer;
+    
+}
+
+.btn_close > svg{
+    color: rgb(212, 212, 212);
+    font-size: 25px;
+}

@@ -1,0 +1,53 @@
+
+
+.named_profile_container{
+    width: 100%;
+    max-width: 150px;
+    
+}
+
+
+.img_avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: gray;
+}
+
+
+.name_hello h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.statistics h1{
+    font-size: 3rem;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+.statistics h2{
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.staistics_card{
+    background: white;
+    border-radius: 20px;
+
+    box-shadow: 0 2px 15px rgb(211, 211, 211);
+
+}
+
+.bg_violet{
+    background: rgb(95, 51, 225);
+    color: white;
+}
+
+
+
+
+
+
+
+
