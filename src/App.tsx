@@ -79,7 +79,7 @@ function App() {
             } />   
             {/* Pomodoro - эффект увеличения */}
             <Route path='pomodoro' element={
-              <motion.div
+              <motion.div className='container_pomodoro'
                 initial={{ scale: 0.8, opacity: 0 }}  // Начало: маленький и невидимый
                 animate={{ scale: 1, opacity: 1 }}    // Анимация: нормальный размер и видимый
                 exit={{ scale: 0.8, opacity: 0 }}     // Выход: уменьшается и исчезает

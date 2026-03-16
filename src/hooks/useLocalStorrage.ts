@@ -6,8 +6,6 @@ import type { DayWeekDate } from "../types/date.types"
 import type { Task } from "../types/data.type"
 
 
-// import { option } from "framer-motion/client"
-
 export const useTasks = () => {
 
   const {currentDate, filteredTaskData, searchCurrentWeekTasks} = useDateUtils()
@@ -77,7 +75,7 @@ export const useTasks = () => {
               minutes: new Date().getMinutes()
             }
           }
-          console.log(taskSave)
+
           setTasksData(prevTasks => [...prevTasks, taskSave])
         }
         catch(err: any) {
@@ -93,10 +91,27 @@ export const useTasks = () => {
       }
 
 
-      const checkingCompletedTask = (taskId:number, checked:boolean) => {
+      const checkingCompletedTask =  async (taskId:string, checked:boolean) => {
+        
         setTasksData((prevDataTask) => {
-           return prevDataTask.map(itemTask => itemTask.id === taskId ? {...itemTask, completed: checked}: itemTask)
-        })
+          return prevDataTask.map(itemTask => itemTask.id === taskId ? {...itemTask, completed: checked}: itemTask)
+       })
+        try{
+          const completedTask = await pb.collection('tasks').update(taskId, {
+            completed: checked
+          })
+          console.log(completedTask)
+         
+        } catch (err){
+          console.error('Ошибка обновления задачи:',err)
+          setTasksData((prevDataTask) => {
+            return prevDataTask.map(itemTask => itemTask.id === taskId ? {...itemTask, completed: !checked}: itemTask)
+         })
+        }
+        
+
+        
+
       }
 
       const statistics = useMemo(() => {

@@ -2,10 +2,12 @@
 
 .named_profile_container{
     width: 100%;
-    max-width: 150px;
+    max-width: 350px;
     
 }
-
+.img_profile{
+    margin-right: 15px;
+}
 
 .img_avatar{
     width: 50px;

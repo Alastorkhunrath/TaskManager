@@ -10,13 +10,13 @@ import './todayTask.css'
 export const TodayTask = () => {
   const { currentDate, filteredTaskData } = useDateUtils()
   const { tasks, statistics } = useContext(TasksContext)
+
   const compliteTask = filteredTaskData(tasks, currentDate)
 
 
   
     useEffect(() => {
       console.log('📊 TodayTask смонтирован')
-      
       return () => {
         
         console.log('👋 TodayTask размонтирован') 

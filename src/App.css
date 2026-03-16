@@ -20,6 +20,13 @@
   width: 100%;
 
 }
+
+
+.container_pomodoro{
+
+height: 100%;
+
+}
 .calendar_weekly{
   width: 100%;
   display: flex;

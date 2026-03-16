@@ -10,7 +10,7 @@ export const MenuProfile = () => {
   const { userData } = useUser()
 
   return (
-    <div className='flex justify-between items-center named_profile_container'>
+    <div className='flex items-center named_profile_container'>
         <div className='img_profile'>
             <div className='img_avatar'>
                 <img src={'null'} alt="" />

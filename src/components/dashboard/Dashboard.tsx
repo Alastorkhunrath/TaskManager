@@ -25,7 +25,7 @@ const logOut = () => {
         <menu>
             <MenuProfile />
             <MenuNav />
-            <div>
+            <div className='exit_container'>
                 <button className='exit_door_btn'  onClick={logOut}>
                   <GiExitDoor />
                 </button>

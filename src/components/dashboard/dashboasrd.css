@@ -14,7 +14,12 @@ menu{
     padding: 20px;
 }
 
-
+.exit_container{
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    justify-content: flex-end;
+}
 .exit_door_btn{
     color: rgb(96, 51, 225);
 
